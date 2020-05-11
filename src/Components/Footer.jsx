@@ -2,7 +2,10 @@ import React from "react";
 
 function Footer(){
    
-   return <footer></footer>
+   const date=new Date();
+   const year=date.getFullYear();
+
+  return <footer>copyright {year}</footer>
 
 
 }
