@@ -101,7 +101,8 @@ footer{
     width: 300px;
     margin: 30px ;
     float: left;
-   
+    display: inline-block; 
+    text-align: center; 
 }
 
 .eventcreater h1{
@@ -110,4 +111,7 @@ footer{
     white-space: pre-wrap;
     word-wrap: break-word;
     align-self: start;
+    padding-top: 5px; 
+    font-size: 16px; 
 }
+
