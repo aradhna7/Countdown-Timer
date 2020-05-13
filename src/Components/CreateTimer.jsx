@@ -32,13 +32,25 @@ function CreateTimer(props){
 
 
     return <div>
-        <form className="timer">
+        <form className="timer" onSubmit={submit} >
             <h2>Event Name</h2>
-            <input onChange={handleChange} type="text" name="eventName" placeholder="enter the event name" value={inputEvent.eventName}></input>
+            <input 
+                  required
+                  onChange={handleChange} 
+                  type="text" name="eventName" 
+                  placeholder="enter the event name" 
+                  value={inputEvent.eventName} 
+            ></input>
             <h3>Enter date:</h3>
-            <input onChange={handleChange} type="date"  name="eventDate"  min={mindate} required value={inputEvent.eventDate}></input>
-            {/* <span class="validity"></span> */}
-            <button onClick={submit} >add</button>
+            <input 
+                required
+                 onChange={handleChange} 
+                 type="date"  
+                 name="eventDate"  
+                 min={mindate} 
+                 value={inputEvent.eventDate}
+            ></input>
+            <button >add</button>
         </form>
     </div>
 }
